@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6L4GBE632Y"></script>
     <script>
@@ -16,14 +17,34 @@
     </script>
     <title>Tarik Haiga</title>
 </head>
-    <body>
-        <div id="container">
-            <div id="latest-work">
-                <h2>Overview of latest work:</h2>
-                <iframe id="figmaSlides" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGwWMDJtTxbvubKzbarT2uu%2FPortfolio-Overview-22%3Fpage-id%3D196%253A74%26node-id%3D196%253A346%26viewport%3D1278%252C445%252C0.14%26scaling%3Dcontain%26starting-point-node-id%3D196%253A346" allowfullscreen></iframe>
-            </div>
-            <p> Visit my old portfolio hosted on <a href='https://tarik.webflow.io'>tarik.webflow.io</a> </p>
+<body>
+    <div id="container">
+        <h1> Tarik Haiga </h1>
+        <p> 
+            I’m a designer focused on product & UX, thinking about strategy as much as pixels. 
+            I aim to create long-term solutions that are simple, creative and reusable. 
+            I do this by reading a lot, talking with people and moving pixels.
+        </p>
+        <p> 
+            Below I highlight some of the previous design work I did in the last 4 years. 
+            For more context and questions, feel free to reach out to my email haigatarik@gmail.com
+        </p>
+        <div id="latest-work">
+            <h3> Work Overview </h2>
+            <!-- Images will be loaded here -->
         </div>
-        <!-- <a href="https://www.producthunt.com/posts/copaste?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-copaste" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=316395&theme=light" alt="Copaste - Copy paste text globally on your Mac without switching apps. | Product Hunt" style="width: 200px; height: 54px;" width="250" height="54" /></a> -->
-    </body>
+        <p> Visit my old portfolio hosted on <a href='https://tarik.webflow.io'>tarik.webflow.io</a> </p>
+    </div>
+    <script>
+        window.onload = function() {
+            const latestWorkDiv = document.getElementById('latest-work');
+            for (let i = 1; i <= 15; i++) {
+                let img = new Image();
+                img.src = `imgs/slide-${i}.png`;
+                img.className = 'work-image';
+                latestWorkDiv.appendChild(img);
+            }
+        };
+    </script>
+</body>
 </html>
