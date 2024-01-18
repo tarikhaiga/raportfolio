@@ -12,8 +12,16 @@ body {
     max-width: 1200px;
 }
 
-h1, h2 {
+h1, h3 {
     font-family: 'Krona One', sans-serif;
+}
+
+h1 {
+    margin-bottom: 24px;
+}
+
+h3 {
+    margin-top: 64px;
 }
 
 p {
