@@ -1,3 +1,3 @@
 # portfolio
 
-My portfolio at www.tarikhaiga.com
+My portfolio at www.haigat.com
